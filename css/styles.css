@@ -1,3 +1,6 @@
+/* agregar aumento de texto debado del títuloo */
+
+
 .row-header{
     margin: 0px auto;
     padding: 0px auto;
@@ -47,4 +50,13 @@
 font-size: 80%;
 margin: 0px;
 color: #0f0f0f;
+}
+
+body{
+    padding: 25px 0px 0px 0px; /* Para alejar la barra de el body en el top*/
+    z-index: 0; /* para superponer el elemento (revisar documentación)*/
+}
+
+.navbar-dark{
+    background-color: #4B0082;
 }
