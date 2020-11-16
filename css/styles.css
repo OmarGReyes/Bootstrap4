@@ -68,3 +68,7 @@ body{
 .navbar-dark{
     background-color: #4B0082;
 }
+
+.card-body{
+    margin-top: 15px;
+}
