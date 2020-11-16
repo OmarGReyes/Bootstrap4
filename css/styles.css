@@ -72,3 +72,27 @@ body{
 .card-body{
     margin-top: 15px;
 }
+
+.btn-warning{
+    border-right-width: 15px ;
+    border-left-width:15px ;
+    font-weight: bold;
+    width: 200px;
+
+    
+}
+.reserve-table{
+    background-color: goldenrod;
+}
+
+.promotion{
+    padding-left: 15px;
+    border: 1.15px;
+    
+    
+}
+.btn-reserve{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
