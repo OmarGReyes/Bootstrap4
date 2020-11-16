@@ -77,7 +77,8 @@ body{
     border-right-width: 15px ;
     border-left-width:15px ;
     font-weight: bold;
-    width: 200px;
+    min-width: 200px;
+    margin-top: 30px;
 
     
 }
@@ -92,7 +93,9 @@ body{
     
 }
 .btn-reserve{
-    background-color: blue;
+    background-color: rgb(69, 69, 211);
     color: white;
     font-weight: bold;
+    margin-top: 30px;
+    
 }
