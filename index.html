@@ -23,14 +23,14 @@
             </button>
             <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png" height="30" width="41"></a>
             <div class="collapse navbar-collapse" id="Navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li> <!--aactive para resaltar
-                 como que es la que está señalada-->
-                <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-phone fa-lg"></span> Contact Us</a></li>
-            </ul>
-        </div>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li> <!--aactive para resaltar
+                    como que es la que está señalada-->
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-phone fa-lg"></span> Contact Us</a></li>
+                </ul>
+            </div>
 
         </div>
     </nav>
@@ -45,7 +45,11 @@
                     <a href="./index.html"><img src="img/logo.png" class="img-fluid"></a>
                 </div>
                 <div class="col-12 col-sm-2 align-self-center">
-                    <a type="submit" class="btn btn-warning" href="#reserve-tables">Reserve Table</a>
+                    <a type="submit" class="btn btn-warning" 
+                    data-toggle="tooltip" data-html="true"
+                    title="Or Call us at <br><strong> +852 12345678</strong>"
+                    data-placement="bottom"
+                    href="#reserve-tables">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -191,6 +195,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
