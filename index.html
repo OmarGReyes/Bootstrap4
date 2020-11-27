@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">   
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel= "stylesheet" href="css/styles.css">
@@ -157,7 +157,7 @@
           <img src="img/logo.png" class="img-fluid" alt="Ristorante con Fusion">
         </div>
         <div class="col-12 mt-5 mt-sm-0 col-sm-3 text-center align-self-center">
-          <button type="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reservationModal">Reserve table</button>
+          <button type="button" class="btn btn-block nav-link btn-warning" id="reserveButton">Reserve table</button>
         </div>
       </div>
     </div>
@@ -335,8 +335,14 @@
                     $("#mycarousel").carousel('cycle');
                     $("#carouselButton").children("span").removeClass('fa-play');
                     $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
+                }   });
+                $('#loginButton').click(function() {
+        $('#loginModal').modal('show');
+      });
+      $('#reserveButton').click(function() {
+        $('#reservationModal').modal('show');
+      });
+
         </script>
 
 
